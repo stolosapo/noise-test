@@ -6,19 +6,19 @@ bin_PROGRAMS = noisetest
 
 mainincludedir = $(includedir)/noisetest
 maininclude_HEADERS = \
-    CircuitBreaker.h \
-    MockHealthPolicy.h
+    AssertException.h \
+    Assertion.h \
+    UnitTest.h \
+    UnitTestFunction.h \
+    UnitTestSuite.h
 
 
 common_sources = \
-    CircuitBreaker.cpp \
-    CircuitBreakerClosedState.cpp \
-    CircuitBreakerHalfOpenState.cpp \
-    CircuitBreakerHealthPolicy.cpp \
-    CircuitBreakerOpenState.cpp \
-    CircuitBreakerState.cpp \
-    TimeService.cpp \
-    MockHealthPolicy.cpp
+    AssertException.cpp \
+    Assertion.cpp \
+    Logger.cpp \
+    UnitTest.cpp \
+    UnitTestSuite.cpp
 
 
 noisetest_SOURCES = main.cpp $(common_sources)
