@@ -31,7 +31,6 @@ namespace NoiseTest
 
         string getDescription();
         bool isPassed();
-
         bool isIgnored();
         void setIgnored(bool ignored);
     };
