@@ -6,7 +6,7 @@
 
 using namespace NoiseTest;
 
-void assertTrue(bool value)
+void NoiseTest::assertTrue(bool value)
 {
     if (value)
     {
@@ -22,7 +22,7 @@ void assertTrue(bool value)
     throw AssertException(mess);
 }
 
-void assertFalse(bool value)
+void NoiseTest::assertFalse(bool value)
 {
     if (!value)
     {
@@ -39,7 +39,7 @@ void assertFalse(bool value)
 }
 
 
-void assertEqual(string val1, string val2)
+void NoiseTest::assertEqual(string val1, string val2)
 {
     if (val1 == val2)
     {
@@ -53,7 +53,7 @@ void assertEqual(string val1, string val2)
     throw AssertException(mess);
 }
 
-void assertEqual(int val1, int val2)
+void NoiseTest::assertEqual(int val1, int val2)
 {
     if (val1 == val2)
     {
@@ -67,7 +67,7 @@ void assertEqual(int val1, int val2)
     throw AssertException(mess);
 }
 
-void assertEqual(long val1, long val2)
+void NoiseTest::assertEqual(long val1, long val2)
 {
     if (val1 == val2)
     {
@@ -81,7 +81,7 @@ void assertEqual(long val1, long val2)
     throw AssertException(mess);
 }
 
-void assertEqual(long long val1, long long val2)
+void NoiseTest::assertEqual(long long val1, long long val2)
 {
     if (val1 == val2)
     {
@@ -95,7 +95,7 @@ void assertEqual(long long val1, long long val2)
     throw AssertException(mess);
 }
 
-void assertEqual(double val1, double val2)
+void NoiseTest::assertEqual(double val1, double val2)
 {
     if (val1 == val2)
     {
@@ -109,7 +109,7 @@ void assertEqual(double val1, double val2)
     throw AssertException(mess);
 }
 
-void assertEqual(bool val1, bool val2)
+void NoiseTest::assertEqual(bool val1, bool val2)
 {
     if (val1 == val2)
     {
@@ -127,7 +127,7 @@ void assertEqual(bool val1, bool val2)
 }
 
 
-void assertNotEqual(string val1, string val2)
+void NoiseTest::assertNotEqual(string val1, string val2)
 {
     if (val1 != val2)
     {
@@ -141,7 +141,7 @@ void assertNotEqual(string val1, string val2)
     throw AssertException(mess);
 }
 
-void assertNotEqual(int val1, int val2)
+void NoiseTest::assertNotEqual(int val1, int val2)
 {
     if (val1 != val2)
     {
@@ -155,7 +155,7 @@ void assertNotEqual(int val1, int val2)
     throw AssertException(mess);
 }
 
-void assertNotEqual(long val1, long val2)
+void NoiseTest::assertNotEqual(long val1, long val2)
 {
     if (val1 != val2)
     {
@@ -169,7 +169,7 @@ void assertNotEqual(long val1, long val2)
     throw AssertException(mess);
 }
 
-void assertNotEqual(long long val1, long long val2)
+void NoiseTest::assertNotEqual(long long val1, long long val2)
 {
     if (val1 != val2)
     {
@@ -183,7 +183,7 @@ void assertNotEqual(long long val1, long long val2)
     throw AssertException(mess);
 }
 
-void assertNotEqual(double val1, double val2)
+void NoiseTest::assertNotEqual(double val1, double val2)
 {
     if (val1 != val2)
     {
@@ -197,7 +197,7 @@ void assertNotEqual(double val1, double val2)
     throw AssertException(mess);
 }
 
-void assertNotEqual(bool val1, bool val2)
+void NoiseTest::assertNotEqual(bool val1, bool val2)
 {
     if (val1 != val2)
     {
@@ -214,7 +214,7 @@ void assertNotEqual(bool val1, bool val2)
     throw AssertException(mess);
 }
 
-bool assertMethod(string description, UnitTestFunction testFunction)
+bool NoiseTest::assertMethod(string description, UnitTestFunction testFunction)
 {
     UnitTest* test = new UnitTest(description, testFunction);
 
