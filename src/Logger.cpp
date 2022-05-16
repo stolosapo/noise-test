@@ -1,22 +1,28 @@
 #include "Logger.h"
-#include "Colors.h"
 
-void logPassed(string message)
+#define RESET           "\033[0m"
+#define ERROR_COLOR     "\033[31m"      /* Red */
+#define PASSED_COLOR    "\033[32m"      /* Green */
+#define IGNORED_COLOR   "\033[33m"      /* Yellow */
+
+using namespace NoiseTest;
+
+void NoiseTest::logPassed(string message)
 {
     cout << PASSED_COLOR << message << RESET;
 }
 
-void logFailed(string message)
+void NoiseTest::logFailed(string message)
 {
     cout << ERROR_COLOR << message << RESET;
 }
 
-void logIgnored(string message)
+void NoiseTest::logIgnored(string message)
 {
     cout << IGNORED_COLOR << message << RESET;
 }
 
-void logTestResults(bool ignored, bool passed, string message)
+void NoiseTest::logTestResults(bool ignored, bool passed, string message)
 {
     if (ignored)
     {

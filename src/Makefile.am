@@ -8,6 +8,7 @@ mainincludedir = $(includedir)/noisetest
 maininclude_HEADERS = \
     AssertException.h \
     Assertion.h \
+    Logger.h \
     UnitTest.h \
     UnitTestFunction.h \
     UnitTestSuite.h

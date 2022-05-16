@@ -30,6 +30,9 @@
 noisetest
 example
 
+# Ignore IDE
+.vscode
+
 # Ignore the build and lib dirs
 build/*
 lib/*
